@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 80%;
+    background-color: rgb(250, 244, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid darksalmon;
+    padding-bottom: 50px;
+    min-width: 600px;
+}
+
+#header {
+    height: 120px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:darksalmon;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 10px auto;
+}
+
+.instructions {
+    font-size: 0.8em;
+}
+
+p {
+    text-align: left;
+    max-width: 375px;
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+
+h5 {
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+label {
+    display: inline-block;
+    height: 40px;
+    width: 240px;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+input {
+    border: none; 
+    background-color: rgb(243, 203, 199);   
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 150px;
+    text-align: right;
+    font-family: inherit;
+}
+
+#recipeDetails {
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipeCalc {
+    border: 2px solid darksalmon;
+    padding: 20px 50px;
+    background-color: rgb(245, 233, 232);
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+
+tr:last-child label {
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+tr:last-child input {
+    background-color: rgb(235, 178, 160);
+    font-weight: bold;
+}
+
+#buttonsDiv {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.buttonDiv {
+    margin-top: 20px;
+    background-color: lightsalmon;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.buttonDiv:hover {
+    background-color: black;
+    color: salmon;
+}
+
+ul {
+    margin: 10px auto;
+    display: block;
+}
