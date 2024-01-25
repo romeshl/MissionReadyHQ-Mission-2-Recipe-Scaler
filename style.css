@@ -107,7 +107,7 @@ tr:last-child input {
     margin: 0 auto;
 }
 
-.buttonDiv {
+button {
     margin-top: 20px;
     background-color: lightsalmon;
     padding: 10px;
@@ -119,7 +119,7 @@ tr:last-child input {
     cursor: pointer;
 }
 
-.buttonDiv:hover {
+button:hover {
     background-color: black;
     color: salmon;
 }
