@@ -25,7 +25,7 @@ function RecipeData() {
   };
   // Creates a copy of the ingredients object for scaling recipe
   let scaledIngredients = structuredClone(originalRecipe.ingredients);
-  
+
   return {
     // Adds the weight of the total mix to the original ingredients list (for easy of presenting data)
     init: function () {
@@ -67,17 +67,13 @@ function RecipeData() {
         return calculatedAmount < 5;
       });
       if (lessThanFive) {
-        //this.resetIngredients();
         return false;
       } else {
-
         for (let ingredient of Object.entries(scaledIngredients)) {
           let ingredientName = ingredient[0];
           let currentAmount = ingredient[1];
           let calculatedAmount = currentAmount * multiplyFactor;
-          // In the []s below grabs the key name from the ingredient and converts it to a string.
           scaledIngredients[ingredientName] = calculatedAmount;
-
         }
         return true;
       }
@@ -86,7 +82,7 @@ function RecipeData() {
 }
 
 //---------------------------------------------------------------------------------
-// This function updates the HTML on recipeDiv Div
+// This function updates the HTML on the recipeDiv Div
 function updateRecipeDiv(html) {
   const recipeDiv = document.getElementById("recipeDetails");
   recipeDiv.innerHTML = "";
@@ -102,6 +98,7 @@ function initializeEventListenersAndOthers() {
   // Adding EventListeners for the buttons
   resetButton.addEventListener("click", resetPage);
   printButton.addEventListener("click", printRecipe);
+  // init function adds 'Total mix' to ingredients list of the recipe
   recipe.init();
 }
 
@@ -213,12 +210,13 @@ function scaleRecipe(event, element) {
 
 //---------------------------------------------------------------------------------
 // This function scales the recipe and stores the new ingredient amount in the 'recipe' object
+// by calling 'scaleRecipe()' function
 function calculateRecipe(index, newAmount) {
   // Grabs the original ingredient amount of the index location
   let previousAmount = recipe.getRecipeIngredients()[index][1];
   // Calculates the factor in which the whole recipe has to be multiplied by
   let multiplyFactor = newAmount / previousAmount;
-  // If there is even one amount that is less than 5g. Reload the original recipe and
+  // If there is even one amount that is less than 5g. Reload the last recipe and
   // display a warning message and exit the function.
   if (!recipe.scaleRecipe(multiplyFactor)) {
     alert(
@@ -230,10 +228,10 @@ function calculateRecipe(index, newAmount) {
 //---------------------------------------------------------------------------------
 
 
-// Creates an instance of AccessRecipe for displaying and scaling ingredient amounts
+// Creates an instance of RecipeData for displaying and scaling ingredient amounts
 const recipe = RecipeData();
 
-// Initialize Event Listeners for buttons
+// Initialize Event Listeners for buttons and recipe object
 initializeEventListenersAndOthers();
 
 // Displays the recipe on the page at the start.
