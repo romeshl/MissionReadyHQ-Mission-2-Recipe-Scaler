@@ -50,7 +50,7 @@ function RecipeData() {
     getRecipeMethod: function () {
       return originalRecipe.method;
     },
-    // Returns the ingredients object
+    // Returns the ingredients object in a 2 dimensional array format
     getRecipeIngredients: function () {
       return Object.entries(scaledIngredients);
     },
