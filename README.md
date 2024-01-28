@@ -19,3 +19,5 @@ Any one of the following
 
 For this project I decided to code a recipe scaler which would be useful in a production kitchen. 
 I tried to keep the interface simple while keeping the full funtionality. 
+
+ https://romeshl.github.io/RecipeScaler/recipe%20scaler.html
