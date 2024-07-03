@@ -1,5 +1,9 @@
 # MissionReadyHQ-Mission-2-Recipe-Scaler
 
+### Deployed web page
+[Mission Ready HQ - Mission 2 - Recipe Scaler](https://romeshl.github.io/MissionReadyHQ-Mission-2-Recipe-Scaler/index.html) 
+
+## Intro
 This is the Mission 2 I did for Mission Ready HQ - Full-stack developer accelerator course - Level 4.
 
 The Requirements of the Mission 2 was to show and demonstrate an understanding of JavaScript language by including the following JavaScript on the page.
@@ -9,10 +13,9 @@ The Requirements of the Mission 2 was to show and demonstrate an understanding o
 3. Use of document.getElementById() or document.querySelector() to change or 
 4. display the values/styles/attributes of the original HTML 
 5. Use of Events (e.g. onclick or addEventListener) 
-Any one of the following 
-    a. Use of Loops 
-    b. Demonstrate the use of both arithmetic and comparative operators. 
-
+6. Any one of the following,
+    - Use of Loops
+    - Demonstrate the use of both arithmetic and comparative operators.
 
 For this project I decided to code a recipe scaler which would be useful in a production kitchen.
 
@@ -23,8 +26,3 @@ What's special about this recipe scaler is that, it has the following 2 importan
 I tried to keep the interface simple while keeping the full functionality. 
 
 I created a JS object to hold the recipe data and used Closure functions to access and update date. 
-
-The deployed web page can be found in the link below. 
-
-[Mission Ready HQ - Mission 2 - Recipe Scaler](https://romeshl.github.io/MissionReadyHQ-Mission-2-Recipe-Scaler/index.html) 
-
