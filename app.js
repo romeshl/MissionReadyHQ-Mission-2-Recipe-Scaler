@@ -163,7 +163,7 @@ function displayRecipe(recipe) {
   // Displays the html
   let recipePrint = "";
   recipePrint = `<h2>${recipe.getRecipeName()}</h2>` +
-    `<h5>(Double click on the quantity to adjust quantity. ` +
+    `<h5>(Double click on the quantity to adjust quantity. Enter the new value and press ENTER key.` +
     `Everything is in Grams)</h5>`;
   recipePrint += `<table class="recipeCalc">`; // This stores the HTML to be sent to recipeDiv
   // Cycles through the ingredients list
